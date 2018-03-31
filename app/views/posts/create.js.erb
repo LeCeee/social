@@ -1,0 +1,5 @@
+console.log("file linked")
+var newPost = $('<%= escape_javascript render "post", post: @post  %>');
+
+$('.post-list-container ul').prepend(newPost);
+$('#post_content').val('');
